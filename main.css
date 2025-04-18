@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color: #fff7f0;
+    color: #444;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, p {
+    font-family: 'Great Vibes', cursive;
+  }
+  
+  .hero {
+    height: 100vh;
+    background: url('images/photo1.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    animation: fadeInDown 2s ease;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    animation: fadeInUp 2s ease;
+  }
+  
+  #gallery {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 2.5rem;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .gallery-item {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.6s ease;
+  }
+  
+  .gallery-item.visible {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #ffdad4;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
